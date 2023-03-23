@@ -2,10 +2,10 @@
 
 /**
  * add - a function that adds two integers and returns the result
- * @one: first number
- * @two: second number
+ * @a: int to be added to b
+ * @b: int to be added to a
  *
- * Return: one + two
+ * Return: sum of a and b
  */
 int add(int a, int b)
 {
