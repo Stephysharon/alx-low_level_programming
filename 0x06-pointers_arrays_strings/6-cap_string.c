@@ -14,7 +14,9 @@ char *cap_string(char *entry)
 		while (!(entry[index] >= 'a' && entry[index] <= 'z'))
 			index++;
 		if (entry[index - 1] == ' ' ||
-		    entry[index - 1] ==	',' ||
+		    entry[index - 1] ==	'\t' ||
+		    entry[index - 1] == '\n' ||
+		    entry[index - 1] == ',' ||
 		    entry[index - 1] == ';' ||
 		    entry[index - 1] == '.' ||
 		    entry[index - 1] == '!' ||
@@ -24,8 +26,6 @@ char *cap_string(char *entry)
 		    entry[index - 1] == ')' ||
 		    entry[index - 1] == '{' ||
 		    entry[index - 1] == '}' ||
-		    entry[index - 1] == '\t' ||
-		    entry[index - 1] == '\n' ||
 		    index == 0)
 		       entry[index] -= 32;
 
