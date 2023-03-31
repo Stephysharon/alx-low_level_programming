@@ -2,7 +2,7 @@
 
 /**
  * main - a[2] = 98, followed by a new line.
- * Return: Always 0
+ * Return: 0
  */
 int main(void)
 {
@@ -16,8 +16,8 @@ int main(void)
 	 * write your line of code here...
 	 * Remember:
 	 * - you are not allowed to use a
-	 * - you are not allowed to modify the variable p
-	 * - you can only write one statement
+	 * - you are not allowed to modify p
+	 * - only one statement
 	 * - you are not allowed to code anything else than this line of code
 	 */
 	*(p + 5) = 98;
