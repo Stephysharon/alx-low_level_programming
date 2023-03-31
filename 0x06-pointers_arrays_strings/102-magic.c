@@ -1,5 +1,9 @@
 #include <stdio.h>
 
+/**
+ * main - a[2] = 98, followed by a new line.
+ * Return: Always 0
+ */
 int main(void)
 {
 	int n;
