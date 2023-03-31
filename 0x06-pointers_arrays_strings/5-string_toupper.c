@@ -3,20 +3,21 @@
 /**
  * *string_toupper - Write a function that changes all
  * lowercase letters of a string to uppercase.
- * @n: pointer
+ * @hi: pointer
  *
- * Return: n
+ * Return: Lowercase changed to uppercase of the string
  */
-char *string_toupper(char *n)
+char *string_toupper(char *hi)
 {
-	int i;
+	int index = 0;
+	int desp = 'a' - 'A';
 
-	i = 0;
-	while (n[i] != '\0')
+	for (index = 0; hi[index] != '\0'; ++index)
 	{
-		if (n[i] >= 'a' && n[i] <= 'z')
-			n[i] = n[i] - 32;
-		i++;
+		if (hi[index] >= 'a' && hi[index] <= 'z')
+		{
+			hi[index] = hi[index] - desp;
+		}
 	}
-	return (0);
+	return (hi);
 }
